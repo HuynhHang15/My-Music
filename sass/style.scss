@@ -1,0 +1,98 @@
+@import './variable';
+@import './sidebar';
+@import './navbar';
+@import './trending';
+@import './recently';
+@import './playlist';
+@import './favorite';
+@import './player';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    // background: #333;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+h2{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: $primary-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    &-primary{
+        background: $linear-color;
+    }
+    &-second{
+        background:inherit;
+        border: 1px solid $blue-color;
+    }
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar{
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    position: absolute;
+    width: 80%;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+.main-right{
+    position: absolute;
+    width: 25%;
+    height: 100vh;
+    top: 50px;
+    right: 0;
+    overflow: hidden;
+    padding: 20px 20px;
+    background: $background-color1;
+}
+.main-left{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    top: 50px;
+    left: 20%;
+    padding: 20px 40px 100px 40px;
+    background: $background-color2;
+}
+.scroll{
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 6px;
+        background-color: $background-color1;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGVhZHBob25lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">My music</a>
+            </div>
+            <!-- <div class="sidebar-menu"><i class="fas fa-align-right"></i></div> -->
+            <div class="sidebar-links">
+                <ul class="sidebar-item">
+                    <li class='active sidebar-link'>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span class="link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            <span class="link-text">Trends</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="far fa-compass"></i>
+                            <span class="link-text">Feed</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-item">
+                    <span class='span-title'>Discover</span>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="fas fa-th-large"></i>
+                            <span class="link-text">New and Notable</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="link-text">Release Calendar</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span class="link-text">Event</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-item">
+                    <span class='span-title'>Your Collection</span>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                            <span class="link-text">Favorite Songs</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span class="link-text">Artist</span>
+                        </a>
+                    </li>
+                    <li class='sidebar-link'>
+                        <a href="#">
+                            <i class="far fa-star"></i>
+                            <span class="link-text">Albums</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class='navbar-direc prev active' ><i class="fas fa-chevron-left"></i></div>
+                <div class='navbar-direc next'><i class="fas fa-chevron-right"></i></div>
+                <div class="navbar-search">
+                    <i class="fas fa-search"></i>
+                    <input type="search" class='search'>
+                    <div class="box-search">
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-icon notification">
+                    <i class="fas fa-bell"></i>
+                    <div class="have-notification"></div>
+                    <!-- <div class="notification-block">
+
+                    </div> -->
+                </div>
+                <div class="navbar-icon setting">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="navbar-user">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-left scroll">
+
+                <section class="trending">
+                    <span class="hot">What's hot <i class="fas fa-fire"></i></span>
+                    <h2>Trending</h2>
+                    <div class="slider">
+                        <div class="slider-item">
+                            <h1>On Top<br> Of The World</h1>
+                            <div class="item-buttons">
+                                <button class="btn btn-primary">Play</button>
+                                <button class="btn btn-second">Follow</button>
+                            </div>
+                            <div class="item-listener">
+                                <p>Monthly Listener</p>
+                                <div class="number-listener">32.092</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class='recently'>
+                    <h2>Recently played</h2>
+                    <div class="recently-list-item">
+                        <div class="recently-item">
+                            <div class="recently-image">
+                                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            </div>
+                            <div class="recently-desc">
+                                <div class="title">Elevation</div>
+                                <span class='name'>Steven Furtick</span>
+                            </div>
+                        </div>
+                        <div class="recently-item">
+                            <div class="recently-image">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            </div>
+                            <div class="recently-desc">
+                                <div class="title">The Gary Vee</div>
+                                <span class='name'>Garry Vee</span>
+                            </div>
+                        </div>
+                        <div class="recently-item">
+                            <div class="recently-image">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            </div>
+                            <div class="recently-desc">
+                                <div class="title">The Daily Show</div>
+                                <span class='name'>Trevor Noah</span>
+                            </div>
+                        </div>
+                        <div class="recently-item">
+                            <div class="recently-image">
+                                <img src="https://images.unsplash.com/photo-1495216875107-c6c043eb703f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            </div>
+                            <div class="recently-desc">
+                                <div class="title">Daily Podcast</div>
+                                <span class='name'>Joel Osteen</span>
+                            </div>
+                        </div>
+                        <div class="recently-item">
+                            <div class="recently-image">
+                                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            </div>
+                            <div class="recently-desc">
+                                <div class="title">The Mideset Mentor</div>
+                                <span class='name'>Rob Dial</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="playlist">
+                    <div class="head">
+                        <h2>My Playlist</h2>
+                        <div class="playlist-sort">
+                            <i class="fas fa-sort"></i>
+                            <select class='sort' name="sort" id="">
+                                <option value="1">Most Popular</option>
+                                <option value="2">Alphabetically</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="title-table">
+                        <p>#</p>
+                        <p>Title</p>
+                        <p>Playing</p>
+                        <p>Time</p>
+                        <p>Singer</p>
+                    </div>
+                    <div class="list-song">
+                        <!-- <div class="song-item active">
+                            <div class="song-id">1</div>
+                            <div class="song-title">
+                                <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                <p>Black Space</p>
+                            </div>
+                            <div class="song-playing">63,347,353</div>
+                            <div class="song-time">3:45</div>
+                            <div class="song-singer">1998</div>
+                        </div> -->
+                    </div>
+                </section>
+            </div>
+
+            <div class="main-right">
+                <section class="fav">
+                    <h2>Fav Artist</h2>
+                    <div class="fav-list-items scroll ">
+                        <div class="fav-item">
+                            <div class="fav-item-left">
+                                <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                <div class="fav-desc">
+                                    <div class="fav-singer">Taylor Swift</div>
+                                    <div class="fav-songs">196 songs in library</div>
+                                </div>
+                            </div>
+                            <div class="fav-more">...</div>
+                        </div>
+                        <div class="fav-item">
+                            <div class="fav-item-left">
+                                <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                <div class="fav-desc">
+                                    <div class="fav-singer">Taylor Swift</div>
+                                    <div class="fav-songs">196 songs in library</div>
+                                </div>
+                            </div>
+                            <div class="fav-more">...</div>
+                        </div>
+                        <div class="fav-item">
+                            <div class="fav-item-left">
+                                <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                <div class="fav-desc">
+                                    <div class="fav-singer">Taylor Swift</div>
+                                    <div class="fav-songs">196 songs in library</div>
+                                </div>
+                            </div>
+                            <div class="fav-more">...</div>
+                        </div>
+                        <div class="fav-item">
+                            <div class="fav-item-left">
+                                <img src="https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                <div class="fav-desc">
+                                    <div class="fav-singer">Taylor Swift</div>
+                                    <div class="fav-songs">196 songs in library</div>
+                                </div>
+                            </div>
+                            <div class="fav-more">...</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="player">
+                    <div class="dashboard">
+                        
+                        <!-- CD -->
+                        <div class="cd">
+                            <div class="cd-thumb" 
+                            style="background-image: url('https://media.istockphoto.com/photos/hydrangea-bluepurplish-fllowers-picture-id1227587756?b=1&k=20&m=1227587756&s=170667a&w=0&h=U-qJXYaBUvF3KxTvn-DRzfne7ZewpgOCF4pUZfrB9zM=')">
+                            
+                            </div>
+                        </div>
+
+                        <!-- volumn -->
+                        <div class="volumn">
+                            <i class="fas fa-volume-mute"></i>
+                            <div class="range-volumn-slider">
+                                <input type="range" class="volumn-slider" min='0' max='100' value='50'>
+                                <div class="volumn-progress"></div>
+                            </div>
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        
+                        <!-- Header  -->
+                        <header>
+                            <h2>Black space</h2>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </header>
+                        
+                        <input id="progress" class="progress" type="range" >
+                        <div class="progressBg"></div>
+                    
+                        <div class="timer">
+                            <div class="remaining">-3:10</div>
+                            <div class="duration">2:10</div>
+                          </div>
+
+                        <!-- Control -->
+                        <div class="control">
+                            <div class="btn btn-repeat">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+            
+                            <div class="btn btn-prev">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+            
+                            <div class="btn btn-toggle-play">
+                                <i class="fas fa-pause icon-pause"></i>
+                                <i class="fas fa-play icon-play"></i>
+                            </div>
+            
+                            <div class="btn btn-next">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+            
+                            <div class="btn btn-random">
+                                <i class="fas fa-random"></i>
+                            </div>
+                        </div>
+            
+            
+                        <audio id="audio" src="./music/Unstoppable-Sia-4312901.mp3"></audio>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
